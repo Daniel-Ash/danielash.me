@@ -38,6 +38,11 @@ ol {
   Opacity: 0;
 }
 
+.hiddenSection {
+  display: none;
+  
+}
+
 .section.show {
   Opacity: 1;
   animation: showSection 1000ms;
