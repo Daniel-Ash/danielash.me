@@ -40,7 +40,7 @@ ol {
 
 .section.show {
   Opacity: 1;
-  animation: showSection 500ms;
+  animation: showSection 1000ms;
 }
 
 @keyframes showSection { 
