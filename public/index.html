@@ -47,9 +47,21 @@
         <h2>Projects</h2>
         <p> Rocketship </p>
         <p> Freedom Fightaz </p>
-        <p> Twitter bot </p>
-        <p> Voucher </p>
-        <p> This site </p>
+        <h3> Don McNewt </h3>
+        <p>Don McDonald is an eccentric Wellingtonian who proliferates marginally coherent content seemingly ad hoc
+          through a variety of local and digital media, including Twitter. </p>
+        <p>This Node.js project leveraged the Twitter & Open AI API's to generate and post similar tweets to Don
+          MacDonald at a random cadence. </p>
+        <p>This was a fun project that got my head around Node & Express. In playing around, I made some fun requests that summarised the tweets of an account, and I was interested in extending this to a service that allowed any user to use the APIs to summarise a twitter users tweets, generate tweets, and post on a users behalf. </p>
+        <p>Key learnings:</p>
+        <ul>
+          <li>Error handling. I wrote this without considering the unexpected, which meant the code broke and was also
+            very difficult to debug. If I was to return to the project this would be a key objective </li>
+          <li>More issue management. With help from a good friend Schalk, I built a function that would post a tweet and then schedule the next tweet at a random point in future. This was prone to issues. The next point was held in memory, which was lost if the program crashed or was restarted . This meant that it was extremely unlikely that a tweet would ever be posted.
+            
+            In future I would look to either: use a probability function that determined whether to post rather than storing a value, or store the datapoint somewhere more reliable. 
+            </li>
+        </ul>
       </div>
     </div>
   </div>
