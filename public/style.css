@@ -1,6 +1,8 @@
 html, body {
   background-color: #242424;
   color: #BFBFBF;
+  font-family: "Yrsa", serif;
+  font-size: 16px;
 }
 
 
@@ -25,12 +27,14 @@ h2 {
 p {
   margin-top: 0px;
   margin-bottom: 10px;
-  font-family: "Yrsa", serif;
-  font-size: 16px;
 }
 
 ol {
   margin-top: 0px;
+}
+
+a {
+  color:#e6e6e6
 }
 
 /* Components */
