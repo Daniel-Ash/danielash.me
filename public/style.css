@@ -31,6 +31,7 @@ h3 {
 }
 
 h4 {
+  font-size: 14px;
   margin-top: 8px;
   margin-bottom: 8px;
 }
@@ -97,11 +98,6 @@ button {
   Opacity: 0;
 }
 
-.hiddenSection {
-  display: none;
-  
-}
-
 .section.show {
   Opacity: 1;
   animation: showSection 1000ms;
@@ -135,6 +131,12 @@ button {
   border-width: 1px; 
   width: 75px; 
   height: 5px;
+  margin-bottom: 10px;
+}
+
+.projectHeader {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 1224px) {
