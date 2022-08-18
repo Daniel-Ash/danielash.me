@@ -66,14 +66,16 @@
           <p>Key learnings:</p>
           <ul>
             <li>Error handling. I wrote this without considering the unexpected, which meant the code broke and was also
-              very difficult to debug. If I was to return to the project this would be a key objective </li>
-            <li>More issue management. With help from a good friend Schalk, I built a function that would post a tweet
+              very difficult to debug. If I was to return to the project this would be a key objective. </li>
+            <li>I should improve my approach to scheduling. With help from a good friend Schalk, I built a function that would post a tweet
               and then schedule the next tweet at a random point in future. This was prone to issues. The next point was
               held in memory, and was lost if the program crashed or was restarted. This meant that it was extremely
               unlikely that a tweet would ever be posted.
 
               In future I would look to either: use a probability function that determined whether to post rather than
               storing a value, or store the datapoint somewhere more reliable.
+
+              To be honest, this could be reduced to a much simpler cloud function that is scheduled, runs a probability function that if unsuccessful returns immediately, and otherwise runs the logic to generate and posts a tweet.
             </li>
           </ul>
         </div>
