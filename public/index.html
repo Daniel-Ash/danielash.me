@@ -20,7 +20,16 @@
       <div class="section">
         <img src="./assets/Dan_compress.png" width="200px" height="200px" alt="Dan's profile photo">
         <h1>Dan Ash</h1>
+        <div class="linkButtonContainer">
+          <a class="button" href="https://www.linkedin.com/in/dan-ash-401352b9/">
+            <div class="linkButton">View my Linkedin</div>
+          </a>
+          <a class="button" href="mailto:dan@danielash.me">
+            <div class="linkButton">dan@danielash.me</div>
+          </a>
+        </div>
         <div class="divider"></div>
+
       </div>
       <div class="section">
         <h2>About me</h2>
@@ -53,64 +62,67 @@
           <h3> Freedom Fightaz </h3>
         </div>
         -->
-        <div class="section">
-          <h3> Don McNewt </h3>
-          <p><a href="https://rgdsm.wordpress.com/">Don McDonald</a> is an eccentric Wellingtonian who proliferates
-            marginally coherent content seemingly ad hoc
-            through a variety of local and digital media, including <a href="https://twitter.com/McDONewt">Twitter</a>.
-          </p>
-          <p>This Node.js project leveraged the Twitter & Open AI API's to generate and post similar tweets to Don
-            MacDonald at a random cadence. </p>
-          <a class="button" href="https://github.com/Daniel-Ash/don-mcnewt-bot">
-            <div class="linkButton">View on Github</div>
-          </a>
-        </div>
-        <div class="section">
-          <h4>Key learnings:</h4>
-          <ul>
-            <li> This was a fun project that got my head around Node & Express. In playing around, I made some fun
-              requests that summarised the tweets of an account, and I was interested in extending this to a service
-              that allowed any user to use the APIs to summarise a twitter users tweets, generate tweets, and post on
-              a
-              users behalf.</li>
-            <li>Error handling. I wrote this without considering the unexpected, which meant the code broke and was
-              also
-              very difficult to debug. If I was to return to the project this would be a key objective. </li>
-            <li>I would improve my approach to scheduling. I decided it was uncool for a twitter bot to post
-              at the same time, every day or every hour, etc. <br>
-              <ul>
-                <li>
-                  To resolve this, I built a function that
-                  would post a tweet
-                  and then schedule the next tweet at a random
-                  point in future. This was prone to issues because it held
-                  the
-                  time for the next tweet in memory.
-                </li>
-                <li>If the program crashed or restarted this datapoint was
-                  lost. I was running this on replit, which it turns out will frequently restart your process, so in
-                  reality this function was never able to post tweets.
-                </li>
-                <li>
-                  In future I would look to either: frequently ask a probability function whether to post rather than
-                  storing a value in memory, or store the datapoint somewhere more durable.
-                </li>
-              </ul>
-            </li>
-            <li>
-              To be honest, this could be reduced to a much simpler cloud function that is scheduled, runs a
-              probability
-              function (with some parameter to acheive the desired cadence of tweets) that if unsuccessful returns
-              immediately, and otherwise runs the logic to generate and post a
-              tweet.
-            </li>
-          </ul>
+          <div class="section">
+            <h3> Don McNewt </h3>
+            <p><a href="https://rgdsm.wordpress.com/">Don McDonald</a> is an eccentric Wellingtonian who proliferates
+              marginally coherent content seemingly ad hoc
+              through a variety of local and digital media, including <a
+                href="https://twitter.com/McDONewt">Twitter</a>.
+            </p>
+            <p>This Node.js project leveraged the Twitter & Open AI API's to generate and post similar tweets to Don
+              MacDonald at a random cadence. </p>
+            <div class="linkButtonContainer">
+              <a class="button" href="https://github.com/Daniel-Ash/don-mcnewt-bot">
+                <div class="linkButton">View on Github</div>
+              </a>
+            </div>
+          </div>
+          <div class="section">
+            <h4>Key learnings:</h4>
+            <ul>
+              <li> This was a fun project that got my head around Node & Express. In playing around, I made some fun
+                requests that summarised the tweets of an account, and I was interested in extending this to a service
+                that allowed any user to use the APIs to summarise a twitter users tweets, generate tweets, and post on
+                a
+                users behalf.</li>
+              <li>Error handling. I wrote this without considering the unexpected, which meant the code broke and was
+                also
+                very difficult to debug. If I was to return to the project this would be a key objective. </li>
+              <li>I would improve my approach to scheduling. I decided it was uncool for a twitter bot to post
+                at the same time, every day or every hour, etc. <br>
+                <ul>
+                  <li>
+                    To resolve this, I built a function that
+                    would post a tweet
+                    and then schedule the next tweet at a random
+                    point in future. This was prone to issues because it held
+                    the
+                    time for the next tweet in memory.
+                  </li>
+                  <li>If the program crashed or restarted this datapoint was
+                    lost. I was running this on replit, which it turns out will frequently restart your process, so in
+                    reality this function was never able to post tweets.
+                  </li>
+                  <li>
+                    In future I would look to either: frequently ask a probability function whether to post rather than
+                    storing a value in memory, or store the datapoint somewhere more durable.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                To be honest, this could be reduced to a much simpler cloud function that is scheduled, runs a
+                probability
+                function (with some parameter to acheive the desired cadence of tweets) that if unsuccessful returns
+                immediately, and otherwise runs the logic to generate and post a
+                tweet.
+              </li>
+            </ul>
 
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
