@@ -1,6 +1,15 @@
+:root {
+  --accent: #BB372F;
+  --neutral10: #E6E6E6;
+  --neutral9: #BFBFBF;
+  --neutral6: #4D4D4D;
+  --neutral1: #242424;
+
+}
+
 html, body {
-  background-color: #242424;
-  color: #BFBFBF;
+  background-color: var(--neutral1);
+  color: var(--neutral9);
   font-family: "Yrsa", serif;
   font-size: 16px;
 }
@@ -10,7 +19,7 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
-  color: #e6e6e6;
+  color: var(--neutral10);
 }
 
 h1 {
@@ -51,7 +60,7 @@ li {margin-bottom: 2px;}
 
 /* links and buttons */
 a {
-  color:#BFBFBF
+  color:var(--neutral9)
 } 
 
 a.button {
@@ -60,11 +69,11 @@ a.button {
   display: flex;
 }
 
-.linkButton {
+button, .linkButton {
   width:fit-content;
   margin-top: 0px;
-  background-color: #4D4D4D;
-  color: #E6E6E6;
+  background-color: var(--neutral6);
+  color: var(--neutral10);
   border-style: none;
   padding: 5px 10px;
   font-family: 'Archivo', sans-serif;
@@ -78,19 +87,6 @@ a.button {
   display:flex; 
   gap: 10px;
   margin-bottom: 10px;
-}
-
-button {
-  margin-top: 0px;
-  background-color: #4D4D4D;
-  color: #E6E6E6;
-  border-style: none;
-  padding: 5px 10px;
-  font-family: 'Archivo', sans-serif;
-  font-weight: 600; 
-  font-size: 14px;
-  cursor: pointer;
-  text-decoration: none;
 }
 
 /* Components */
@@ -127,7 +123,7 @@ button {
 
 .divider {
   border-style: solid; 
-  border-color: #BB372F; 
+  border-color: var(--accent); 
   border-width: 1px; 
   width: 75px; 
   height: 5px;
