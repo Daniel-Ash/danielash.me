@@ -61,13 +61,90 @@
         <div class="section">
           <h2>Projects</h2>
         </div>
-        <!--
-          <h3> Rocketship </h3>
-        </div>
+
         <div class="section">
-          <h3> Freedom Fightaz </h3>
+          <div class="projectHeader">
+            <h3> Rocketship </h3>
+            <p> In this lockdown project I used the prompt of a digital art gallery to explore Vue.js. </p>
+            <p>Prior to being
+              introduced to Vue my programming experience was entirely centered around data analysis - SQL and Jupyter
+              Notebooks. My mind had been blown by the Vue 'get started' guide and I was very keen to build a proper
+              app.</p>
+            <div class="linkButtonContainer">
+              <a class="button" href="https://rocketship-20.danielash1.repl.co/">
+                <div class="linkButton">Go to app</div>
+              </a>
+              <a class="button" href="https://github.com/Daniel-Ash/Rocketship">
+                <div class="linkButton">View source on Github</div>
+              </a>
+            </div>
+          </div>
         </div>
-      -->
+
+        <div class="section">
+          <h4>Key learnings:</h4>
+          <ul>
+            <li> Building a Vue site with Vite was awesome. I did find there was a pretty steep learning curve to
+              implement passing props between components, but I got there. I also found </li>
+            <li> This project also helped me to get the hang of modern CSS. I was watching a number of <a
+                href="https://www.youtube.com/kepowob">Kevin Powell videos</a> at the time, and was inspired by his
+              approach to responsive css, for example: allowing elements to breathe and fill space. Resize the page and
+              watch the headers grow/shrink to see this in action. The layout
+              also switches orientation based on flex-overflow rather than via a breakpoint.
+            </li>
+            <li>Although it is not currently available, I also used this project to explore and implement firebase auth,
+              which also saw me using things like the Vue router.
+              I had an
+              idea of introducing user generated content of some description, but that has gone nowhere.. 🤣 </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <div class="projectHeader">
+            <h3> Danielash.me </h3>
+            <p> Well, you're looking at it. My goal with this site was to make a good looking portfolio page. At the
+              same time, I wanted to explore building a site with no framework to feel around the limits of vanilla
+              html/css/js.</p>
+            <p> I also wanted to focus on performance and accessibility, and to deploy a site using Cloudflare Pages.
+            </p>
+            <div class="linkButtonContainer">
+              <a class="button" href="https://danielash.me">
+                <div class="linkButton">Go to site</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h4>Key learnings:</h4>
+          <ul>
+            <li>The sorts of limitations I found: </li>
+            <ul>
+              <li>As my project grew, I was pretty surprised that there wasn't an obvious/simple way to import slabs of
+                static html into my index.html just to clean up the codebase. I entered the rabbithole of web components
+                but that seemed too complicated for what should be very simple.</li>
+              <li>Simultaneously, I have decided not to have show/hide sections, or separate pages simply because it
+                seems overkill to implement the js required when I could reach for a framework. The result - a very long
+                page. I'm probably ready for a framework.. </li>
+              <li>I talk more about it below, but it is nice to have a framework automatically cache bust when static
+                content changes.</li>
+            </ul>
+            <li>Cloudflare Pages is a delight to use. Awesome to simply push to github and have your site available in
+              data
+              centres around the world, for free.</li>
+            <li>It has been awesome to learn more about caches and CDNs. However, I'm not
+              totally happy with my current approach to cache busting (manually updating query params on static files),
+              and because I don't have a build step (no framework, Cloudflare Pages simply grabs my static files), I am
+              not yet sure how I should automatically version static files.. </li>
+            <li>I went through a lengthy design phase before I have landed on this very simple single column design. The
+              key lesson here is to do as much prototyping in figma as possible. Starting and abandoning half completed
+              html/css is painful and time consuming. </li>
+            <li>Similarly sometimes you stumble upon the need for a new component while you're cutting some peripheral
+              html/css - I think the right call here is to stop and prototype in figma, because the time taken in code
+              kills a lot of opportunity for creative destruction.</li>
+          </ul>
+        </div>
+
         <div class="section">
           <div class="projectHeader">
             <h3> Don McNewt </h3>
@@ -79,10 +156,11 @@
             <p>This Node.js project leveraged the Twitter & Open AI API's to generate and post similar tweets to Don
               MacDonald at a random cadence. </p>
             <a class="button" href="https://github.com/Daniel-Ash/don-mcnewt-bot">
-              <div class="linkButton">View on Github</div>
+              <div class="linkButton">View source on Github</div>
             </a>
           </div>
         </div>
+
         <div class="section">
           <h4>Key learnings:</h4>
           <ul>
@@ -123,9 +201,7 @@
               tweet.
             </li>
           </ul>
-
         </div>
-
       </div>
     </div>
   </div>
